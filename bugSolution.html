@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Solution: Check if myDiv exists before accessing its properties.
+    const myDiv = document.getElementById('myDiv');
+    let myVar;
+    if(myDiv){
+        myVar = myDiv.myProperty; //This will still return undefined because myProperty is not a property of myDiv
+    }
+    console.log(myVar); // outputs undefined
+
+    // Correcting the tag issue depends on the use case. A proper header would be:
+    <h1>This is a heading</h1>
+
+    // Correcting improper nesting (all closing tags are added)
+    <p>This is a paragraph.</p>
+  </script>
+</body>
+</html>
