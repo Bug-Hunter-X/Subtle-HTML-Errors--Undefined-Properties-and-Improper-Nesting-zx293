@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This code attempts to access a property of an undefined object.
+    // It will not throw an error, but will return undefined, leading to unexpected behavior.
+    let myVar = myDiv.myProperty;
+    console.log(myVar); // outputs undefined
+
+    // Another common issue is using the wrong tag or attribute which would not throw an error but produce unexpected results.
+    // for example using <p> instead of <h1> for headings would make the page look unorganized but it won't throw error.
+    
+    // Similarly, an improperly nested element (like missing closing tags) won't always produce an error, but cause rendering problems. 
+    // If you look at the source code, you'll notice that a closing tag for <p> is missing and there are no errors on the browser's console. 
+    <p>This is a paragraph.</p>This is not in a paragraph tag, but would be considered part of it by the browser. </body>
+</html>
